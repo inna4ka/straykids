@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="icon" type="image/x-icon" href="img/icon.png">
+	<title>StrayKids</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script>
+		function closemenu(){
+			let el = document.getElementById("headermenu");
+			el.style.display="none";
+		}
+		function openmenu(){
+			let el = document.getElementById("headermenu");
+			el.style.display="block";
+		}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+	<div id="headermenu">
+		<div id="close" onclick="closemenu()">X</div>
+		<div id="navmenu">
+			<ul>
+				<li><a href="#Profile" onclick='closemenu()'>Profile</a></li>
+				<li><a href="#DiscoGraphy" onclick='closemenu()'>DiscoGraphy</a></li>
+				<li><a href="#Gallery" onclick='closemenu()'>Gallery</a></li>
+				<li><a href="#Video" onclick='closemenu()'>video</a></li>
+				<!-- <li><a href="" onclick='closemenu()'>Notice</a></li> -->
+				<li><a href="#Schedule" onclick='closemenu()'>Schedule</a></li>
+			</ul>
+		</div>
+	</div>
+	<header>
+		<nav>
+			<figure><img src="img/logo.png" alt=""></figure>
+			<menu onclick="openmenu()"><img src="img/burmenu.png" alt=""></menu>
+		</nav>
+		<h1>OddinaRy</h1>
+		<h3>Stray Kids</h3>
+		<p>
+			Stray Kids(스트레이 키즈) 2nd World Tour "MANIAC" <br>in Seoul OFFICIAL MERCH 판매 안내
+		</p>
+	</header>
+	<section id="Profile">
+		<img src="img/icon.png" alt="">
+		<h1>Profile</h1>
+		<div class="wrapper_rofile">
+			<div class="box_profile">
+				<img src="img/bangchan.jpg" alt="">
+				<h2>BANG CHAN</h2>
+				<p>이름 : 방찬 <br>
+				생일 : 1997.10.03</p>
+			</div>
+			<div class="box_profile">
+				<img src="img/leeknow.jpg" alt="">
+				<h2>LEE KNOW</h2>
+				<p>이름 : 리노<br>
+				생일 : 1998.10.25</p>
+			</div>
+			<div class="box_profile">
+				<img src="img/changbin.jpg" alt="">
+				<h2>CHANGBIN</h2>
+				<p>
+				이름 : 창빈<br>
+				생일 : 1999.08.11
+				</p>
+			</div>
+			<div class="box_profile">
+				<img src="img/hyunjin.jpg" alt="">
+				<h2>HYUNJIN</h2>
+				<p>
+				이름 : 현진<br>
+				생일 : 2000.03.20
+				</p>
+			</div>
+			<div class="box_profile">
+				<img src="img/han.jpg" alt="">
+				<h2>HAN</h2>
+				<p>
+				이름 : 한<br>
+				생일 : 2000.09.14
+				</p>
+			</div>
+			<div class="box_profile">
+				<img src="img/felix.jpg" alt="">
+				<h2>FELIX</h2>
+				<p>
+				이름 : 필릭스<br>
+				생일 : 2000.09.15
+				</p>
+			</div>
+			<div class="box_profile">
+				<img src="img/seongmin.jpg" alt="">
+				<h2>SEUNGMIN</h2>
+				<p>
+				이름 : 승민<br>
+				생일 : 2000.09.22
+				</p>
+			</div>
+			<div class="box_profile">
+				<img src="img/in.jpg" alt="">
+				<h2>I.N.</h2>
+				<p>
+				이름 : 아이엔<br>
+				생일 : 2001.02.08
+				</p>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="DiscoGraphy">
+		<img src="img/icon.png" alt="">
+		<h1>DiscoGraphy</h1>
+		<div class="wrapper_DiscoGraphy">
+			<div class="box_DiscoGraphy">
+				<img src="img/1.jpg" alt="">
+				<h2>Oddinary</h2>
+				<p>2022-03-18</p>
+			</div>
+			<div class="box_DiscoGraphy">
+				<img src="img/2.jpg" alt="">
+				<h2>Christmas EveL</h2>
+				<p>2021-11-29</p>
+			</div>
+			<div class="box_DiscoGraphy">
+				<img src="img/3.jpg" alt="">
+				<h2>NOEASY</h2>
+				<p>2021-08-23</p>
+			</div>
+			<div class="box_DiscoGraphy">
+				<img src="img/4.jpg" alt="">
+				<h2>Mixtape : 애</h2>
+				<p>2021-06-26</p>
+			</div>
+			<div class="box_DiscoGraphy">
+				<img src="img/5.jpg" alt="">
+				<h2>ALL IN (Korean.)</h2>
+				<p>2020-11-26</p>
+			</div>
+			<div class="box_DiscoGraphy">
+				<img src="img/6.png" alt="">
+				<h2>ALL IN</h2>
+				<p>2020-07-27</p>
+			</div>
+		</div>	
+	</section>
+
+	<section id="Gallery">
+            <h1>Gallery</h1>
+            <div class="slider">
+                <input type="radio" id="btn-1" name="toggle" checked>
+                <input type="radio" id="btn-2" name="toggle">
+                <input type="radio" id="btn-3" name="toggle">
+                <div class="slider-controls">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
+                </div>                    
+                <div class="slider-inner">
+                    <div class="slider-slides">
+                        <img src="img/gallery1.jpg">
+                        <img src="img/gallery2.jpg">
+                        <img src="img/gallery3.jpg">
+                    </div>                        
+                </div>
+            </div>
+        </section>
+        <section id="Video">
+        	<!-- <img src="img/icon.png" alt=""> -->
+			<h1>Video</h1>
+			<iframe width="" height="" src="https://www.youtube.com/embed/EaswWiwMVs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="Schedule">
+        	<img src="img/icon.png" alt="">
+			<h1>Schedule</h1>
+        	<div class="wrapper_Schedule">
+        		<div class="Schedule_box">
+        			<p>1   SUN
+					CStray Kids 2nd World Tour "MANIAC" in SEOUL</p>
+					<p>7   SAT
+					TMBC 쇼! 음악중심 (MC 리노)</p>
+					<p>14   SAT
+					TMBC 쇼! 음악중심 (MC 리노)</p>
+        		</div>
+        		<div class="Schedule_box">
+        			<img src="img/2022.jpg" alt="">
+        		</div>
+        	</div>
+        </section>
+
+      <footer>
+      	<img src="img/logo.png" alt="">
+      	<!-- <img src="img/icon.png" alt=""> -->
+      	<p>&copy; Nochevkina Katy</p>
+      </footer>
+
+    <div id = "toTop" ><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+
+
+	<script>
+		 $(document).ready(function(){
+			$("#navmenu").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 1500);
+			});
+		});
+	</script>  
+		<script type="text/javascript">
+
+$(function() {
+
+ $(window).scroll(function() {
+
+ if($(this).scrollTop() != 0) {
+
+ $('#toTop').fadeIn();
+ 
+ } else {
+
+ $('#toTop').fadeOut();
+
+ }
+
+ });
+ 
+ $('#toTop').click(function() {
+
+ $('body,html').animate({scrollTop:0},800);
+
+ });
+ 
+});
+
+</script>     
+</body>
+</html>
