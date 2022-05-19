@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="icon" type="image/x-icon" href="img/icon.png">
+	<title>StrayKids</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script>
+		function closemenu(){
+			let el = document.getElementById("headermenu");
+			el.style.display="none";
+		}
+		function openmenu(){
+			let el = document.getElementById("headermenu");
+			el.style.display="block";
+		}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+	<section id="Biography">
+		<a href="index.html">< back</a>
+		<div class="box_bio">
+			<div class="bio"><img src="img/hyunjin.jpg" alt=""></div>
+			<div class="bio">
+				<h2>HYUNJIN</h2>
+				<p>
+					Появился на свет Хван Хён Джин в Сеуле, некоторое время его домом был Лос-Анджелес. Как единственный ребенок в семье, был окружен вниманием родителей. У парня из хорошее образование, а танцы он осваивал в школе искусств SOPA. Свободно владеет английским и японским языками. 
+				</p>
+				<p>
+					Хван Хёнджин увлекается чтением и походами в аквапарк. Последнее обоснованно: парень по гороскопу — Рыбы. С ним живет питомец: собака Ками, а вот аллергия на шерсть кошачьих не позволяет парню завести пушистого любимца. Из еды предпочитает суши и арбузы. Ненавидит лук, баклажаны, морковь и хурму.
+				</p>
+			</div>
+		</div>
+	</section>
+      <footer>
+      	<img src="img/logo.png" alt="">
+      	<!-- <img src="img/icon.png" alt=""> -->
+      	<p>&copy; Nochevkina Katy</p>
+      </footer>
+
+    <div id = "toTop" ><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+
+
+	<script>
+		 $(document).ready(function(){
+			$("#navmenu").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 1500);
+			});
+		});
+	</script>  
+		<script type="text/javascript">
+
+$(function() {
+
+ $(window).scroll(function() {
+
+ if($(this).scrollTop() != 0) {
+
+ $('#toTop').fadeIn();
+ 
+ } else {
+
+ $('#toTop').fadeOut();
+
+ }
+
+ });
+ 
+ $('#toTop').click(function() {
+
+ $('body,html').animate({scrollTop:0},800);
+
+ });
+ 
+});
+
+</script>     
+</body>
+</html>

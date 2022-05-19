@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="icon" type="image/x-icon" href="img/icon.png">
+	<title>StrayKids</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script>
+		function closemenu(){
+			let el = document.getElementById("headermenu");
+			el.style.display="none";
+		}
+		function openmenu(){
+			let el = document.getElementById("headermenu");
+			el.style.display="block";
+		}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+	<section id="Biography">
+		<a href="index.html">< back</a>
+		<div class="box_bio">
+			<div class="bio"><img src="img/changbin.jpg" alt=""></div>
+			<div class="bio">
+				<h2>CHANGBIN</h2>
+				<p>
+					Противоречивый и интересный Со Чан Бин из Stray Kids родом из южнокорейского городка Йонъин. Парня отличает активность, серьезность, ответственность. Он предпочитает темные цвета в одежде и немного угрюм. От других участников Stray Kids держится особняком.
+				</p>
+				<p>
+					Лев по знаку зодиака Чанбин всегда сидит, скрещивая ноги, прячет руки в карманы и с удовольствием смотрит фильмы ужасов. В то же время он не скрывает, что не расстается с мягкой игрушкой по имени Гю, потому что плохо переносит одиночество. Среди его увлечений — спорт, коллекционирование и шоппинг.
+				</p>
+			</div>
+		</div>
+	</section>
+      <footer>
+      	<img src="img/logo.png" alt="">
+      	<!-- <img src="img/icon.png" alt=""> -->
+      	<p>&copy; Nochevkina Katy</p>
+      </footer>
+
+    <div id = "toTop" ><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+
+
+	<script>
+		 $(document).ready(function(){
+			$("#navmenu").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 1500);
+			});
+		});
+	</script>  
+		<script type="text/javascript">
+
+$(function() {
+
+ $(window).scroll(function() {
+
+ if($(this).scrollTop() != 0) {
+
+ $('#toTop').fadeIn();
+ 
+ } else {
+
+ $('#toTop').fadeOut();
+
+ }
+
+ });
+ 
+ $('#toTop').click(function() {
+
+ $('body,html').animate({scrollTop:0},800);
+
+ });
+ 
+});
+
+</script>     
+</body>
+</html>
