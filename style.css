@@ -353,6 +353,54 @@ background: #940D0D;
 	color: white;
 	font-size: 2em
 }
+/* page 2 */
+#Biography
+{
+	width: 60%;
+	margin: 5% auto;
+}
+#Biography a 
+{
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #500202;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+}
+#Biography a:hover
+{
+	color: #BEFFDD;
+} 
+#Biography .box_bio
+{
+	width: 100%;
+	margin-top: 2em;
+	display: flex;
+	justify-content: space-between;
+}
+#Biography .box_bio .bio
+{
+	flex-basis: 48%;
+}
+#Biography .box_bio .bio img
+{
+	width: 100%;	
+}
+
+#Biography .box_bio .bio h2
+{font-weight: 100;
+	font-size: 4em;
+	text-transform: uppercase;
+}
+
+#Biography .box_bio .bio p
+{
+	color: #404040;
+	padding-top: 2em;
+	line-height: 1.5em;
+}
+/* end page 2 */
+
 
 /*adaptiv mobile*/
 @media screen and (min-width: 320px) and (max-width: 680px) 
@@ -414,6 +462,23 @@ background: #940D0D;
 	}
 	#Schedule .wrapper_Schedule
 	{
+		
+	}
+	#Biography
+	{
+		width: 80%;
+	}
+	#Biography .box_bio
+	{
 		flex-direction: column;
 	}
+	#Biography .box_bio .bio h2 
+	{
+		font-size: 2em;
+		padding-top: 0.5em;
+	}
+	#Biography .box_bio .bio p
+	{
+		padding-top: 0.5em;
+	} 
 }
